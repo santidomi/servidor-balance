@@ -1,0 +1,40 @@
+<div class="infoContainer">
+	{{#if processInfo}}
+		<div class="info">
+			<span>Argumentos de entrada:
+				<span class="dataInfo">{{processInfo.entries}}</span>
+			</span>
+			<span>Sistema operativo:
+				<span class="dataInfo">{{processInfo.so}}</span>
+			</span>
+			<span>Versión de Node.Js:
+				<span class="dataInfo">{{processInfo.node_version}}</span>
+			</span>
+			<span>Memoria total reservada:
+				<span class="dataInfo"> {{processInfo.rss}}</span>
+			</span>
+			<span>Path:
+				<span class="dataInfo">
+					{{processInfo.path}}
+				</span>
+			</span>
+			<span>ID del proces:
+				<span class="dataInfo">
+					{{processInfo.id}}
+				</span>
+			</span>
+			<span>Carpeta del proyecto:
+				<span class="dataInfo">
+					{{processInfo.path}}
+				</span>
+			</span>
+			<span>Numero de Cpus:
+				<span class="dataInfo">
+					{{processInfo.cpu_number}}
+				</span>
+			</span>
+		</div>
+	{{else}}
+		<span>No se ha encontrado información.</span>
+	{{/if}}
+</div>

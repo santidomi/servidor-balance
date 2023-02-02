@@ -1,0 +1,3 @@
+Agregar un parametro para que se decida si se ejecuta en modo fork o en modo cluster.
+Agregar en la vista info el numero de procesadores.
+A

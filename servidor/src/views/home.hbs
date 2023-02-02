@@ -1,0 +1,40 @@
+<div class="appContainer">
+	<h1>Home</h1>
+	<div class="loggedinComponetn">
+		<h3>Bienvenido, {{name}}</h3>
+		<button onclick="location.href='/logout'">Cerrar sesion </button>
+	</div>
+
+
+	<h1>Agregá tu producto</h1>
+    {{> productForm}}
+	
+    <div class="my-4" id="productsContainer"></div>
+
+	<div id="centroDeMensajes">
+
+		<h1>Centro de mensajes</h1>
+		<form action="" id="chatForm">
+			<input
+			id="chatEmail" required type="text" name="email" placeholder="Ingrese su Email" />
+			<input
+			id="chatName" required type="text" name="name" placeholder="Ingrese su nombre" />
+			<input
+				id="chatLastName"
+				type="text"
+				name="lastname" required
+				placeholder="Ingrese su Apellido"
+			/>
+			<input id="chatAlias" required type="text" name="alias" placeholder="Ingrese su Alias" />
+
+			<div id="chatContainer">
+
+			</div>
+
+			<input type="text" required name="text" id="chatText" placeholder="Ingrese su mensaje" />
+			<button>Enviar</button>
+		</form>
+	</div>
+</div>
+    {{> scripts}}
+	<script src="./index.js"></script>
